@@ -179,7 +179,7 @@ for i in "${FIRMWARES[@]}"; do
         elif [[ "$MODEL" == "SM-S711"* ]] && [ "$PINNED_VERSION_S23_FE" ]; then
             VERSION_FLAG="--firmware $PINNED_VERSION_S23_FE --force-firmware"
         else
-
+            VERSION_FLAG=""
         fi
         samfwdl download "$MODEL" "$CSC" $VERSION_FLAG -o "$ODIN_DIR/${MODEL}_${CSC}" || exit 1
         )
