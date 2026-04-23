@@ -272,7 +272,7 @@ if $SAMFWDL; then
         "source \"$TOOLS_DIR/venv/bin/activate\"; pip3 install ."
     )
 
-    BUILD "samfwdl" "$SRC_DIR/external/samloader" "${SAMFWDL_CMDS[@]}"
+    BUILD "samfwdl" "$SRC_DIR/external/samfwdl" "${SAMFWDL_CMDS[@]}"
 fi
 if $SIGNAPK; then
     SIGNAPK_CMDS=(
