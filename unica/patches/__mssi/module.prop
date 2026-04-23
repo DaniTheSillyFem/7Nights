@@ -1,0 +1,4 @@
+id=mssi
+name=Mediatek-ify
+author=Fede2782
+description=Converts an Exynos system image to a Mediatek system image.
