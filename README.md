@@ -2,11 +2,11 @@
   <img loading="lazy" src="readme-res/banner.png"/>
 </h1>
 <p align="center">
-  <a href="https://github.com/yagzie/NERV/blob/paradigm/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/yagzie/NERV?style=for-the-badge&logo=github"/></a>
-  <a href="https://github.com/yagzie/NERV/commits/paradigm"><img loading="lazy" src="https://img.shields.io/github/last-commit/yagzie/NERV/paradigm?style=for-the-badge"/></a>
-  <a href="https://github.com/yagzie/NERV/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/yagzie/NERV?style=for-the-badge"/></a>
-  <a href="https://github.com/yagzie/NERV/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/yagzie/NERV?style=for-the-badge"/></a>
-  <a href="https://github.com/yagzie/NERV/actions/workflows/build.yml"><img loading="lazy" src="https://img.shields.io/github/actions/workflow/status/yagzie/NERV/build.yml?style=for-the-badge"/></a>
+  <a href="https://github.com/DaniTheSillyFem/7Nights/blob/paradigm/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/DaniTheSillyFem/7Nights?style=for-the-badge&logo=github"/></a>
+  <a href="https://github.com/DaniTheSillyFem/7Nights/commits/paradigm"><img loading="lazy" src="https://img.shields.io/github/last-commit/DaniTheSillyFem/7Nights/paradigm?style=for-the-badge"/></a>
+  <a href="https://github.com/DaniTheSillyFem/7Nights/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/DaniTheSillyFem/7Nights?style=for-the-badge"/></a>
+  <a href="https://github.com/DaniTheSillyFem/7Nights/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/DaniTheSillyFem/7Nights?style=for-the-badge"/></a>
+  <a href="https://github.com/DaniTheSillyFem/7Nights/actions/workflows/build.yml"><img loading="lazy" src="https://img.shields.io/github/actions/workflow/status/DaniTheSillyFem/7Nights/build.yml?style=for-the-badge"/></a>
 </p>
 <p align="center">UN1CA <i>(/ˈu.ni.ka/)</i> is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
 
@@ -18,6 +18,10 @@
   <a href="https://t.me/SE_NERV">💬 NERV Telegram</a>
 </p>
 
+<p align="center">
+  <a href="https://t.me/nightsof7">💬 7Nights Telegram</a>
+</p>
+
 # What is UN1CA?
 UN1CA is a work-in-progress custom firmware for Samsung Galaxy devices. It's based on the latest and greatest iteration of Samsung's UX and it also includes additional features and tweaks to ensure the best possible experience out of the box.
 Its build system allows to automatically download/extract the firmware, apply the required patches and generates a flashable zip package for the specified device.
@@ -26,6 +30,9 @@ Any form of contribution, suggestions, bug report or feature request for the pro
 
 # What is NERV?
 NERV is a fork of UN1CA; to make the build system work with One UI 7, we are aiming for an UN1CA-like experience with what we can do. All changes have been made under GPLv3, if you see any problems about credits at repo, please kindly report to me at Telegram, XDA or email. 
+
+# What is 7Nights?
+7Nights is a fork of NERV; to make this whole thing compatible with the A04 models (5F/5M).
 
 # Features
 - Based on the latest Samsung devices firmware:
@@ -64,6 +71,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 # Credits
 A big thanks goes to the following for their invaluable contributions in no particular order:
+- **[UN1CA](https://github.com/salvogiangri/UN1CA)** and **[NERV](https://github.com/vaultzie/NERV)** for the core patches and building system :D
 - **[ShaDisNX255](https://github.com/ShaDisNX255)** for his help, time and for his [NcX ROM](https://github.com/ShaDisNX255/NcX_Stock) which inspired this project
 - **[DavidArsene](https://github.com/DavidArsene)** for his help and time
 - **[paulowesll](https://github.com/paulowesll)** for his help and support
@@ -72,7 +80,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[iDrinkCoffee](https://github.com/iDrinkCoffee-TG)** and **[RisenID](https://github.com/RisenID)** for documentation revisioning
 - **[LineageOS Team](https://www.lineageos.org/)** for their original [OTA updater implementation](https://github.com/LineageOS/android_packages_apps_Updater)
 - **[Bobert10](https://t.me/bobert10)** for the NERV banner
-- **[All Kangers]** for making me laugh with your rebranded repos with no difference
+- **[All Kangers]** for making yagzie laugh with your rebranded repos with no difference
 - *All the UN1CA project contributors and testers ❤️*
 
 # Stargazers over time
