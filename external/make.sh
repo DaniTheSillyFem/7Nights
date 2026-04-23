@@ -142,7 +142,7 @@ APKTOOL=true
 EROFS_UTILS=true
 IMG2SDAT=true
 MAGISKBOOT=true
-SAMLOADER=true
+SAMFWDL=true
 SIGNAPK=true
 
 ANDROID_TOOLS_EXEC=(
@@ -170,10 +170,10 @@ MAGISKBOOT_EXEC=(
     "magiskboot"
 )
 CHECK_TOOLS "${MAGISKBOOT_EXEC[@]}" && MAGISKBOOT=false
-SAMLOADER_EXEC=(
-    "../venv/bin/samloader"
+SAMFWDL_EXEC=(
+    "../venv/bin/samfwdl"
 )
-CHECK_TOOLS "${SAMLOADER_EXEC[@]}" && SAMLOADER=false
+CHECK_TOOLS "${SAMFWDL_EXEC[@]}" && SAMFWDL=false
 SIGNAPK_EXEC=(
     "signapk" "signapk.jar"
 )
@@ -185,7 +185,7 @@ if [[ "$1" == "--check-tools" ]]; then
             ! $EROFS_UTILS && \
             ! $IMG2SDAT && \
             ! $MAGISKBOOT && \
-            ! $SAMLOADER && \
+            ! $SAMFWDL && \
             ! $SIGNAPK; then
         exit 0
     else
@@ -266,13 +266,13 @@ if $MAGISKBOOT; then
     BUILD "magiskboot" "$MAGISKBOOT_TMP" "${MAGISKBOOT_CMDS[@]}"
     rm -rf "$MAGISKBOOT_TMP"
 fi
-if $SAMLOADER; then
-    SAMLOADER_CMDS=(
+if $SAMFWDL; then
+    SAMFWDL_CMDS=(
         "python3 -m venv \"$TOOLS_DIR/venv\""
         "source \"$TOOLS_DIR/venv/bin/activate\"; pip3 install ."
     )
 
-    BUILD "samloader" "$SRC_DIR/external/samloader" "${SAMLOADER_CMDS[@]}"
+    BUILD "samfwdl" "$SRC_DIR/external/samloader" "${SAMFWDL_CMDS[@]}"
 fi
 if $SIGNAPK; then
     SIGNAPK_CMDS=(
