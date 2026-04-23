@@ -134,6 +134,15 @@ for i in "${FIRMWARES[@]}"; do
         exit 1
     fi
 
+    # Override with pinned version if set
+    if [[ "$MODEL" == "SM-A346"* ]] && [ "$PINNED_VERSION_A34" ]; then
+        LATEST_FIRMWARE="A346BXXSBDYI1/A346BOXMBDYI1/A346BXXSBDYI1/A346BXXSBDYI1"
+    elif [[ "$MODEL" == "SM-S711"* ]] && [ "$PINNED_VERSION_S23_FE" ]; then
+        LATEST_FIRMWARE="S711BXXSAEYI1/S711BOXMAEYI1/S711BXXSAEYI1/S711BXXSAEYI1"
+    else
+        LATEST_FIRMWARE="$(GET_LATEST_FIRMWARE "$MODEL" "$CSC")"
+    fi
+
     LOG_STEP_IN "- Processing $MODEL firmware with $CSC CSC"
     LOG "- Downloaded firmware: $(cat "$ODIN_DIR/${MODEL}_${CSC}/.downloaded" 2> /dev/null)"
     LOG "- Extracted firmware: $(cat "$FW_DIR/${MODEL}_${CSC}/.extracted" 2> /dev/null)"
@@ -174,10 +183,10 @@ for i in "${FIRMWARES[@]}"; do
         # Anan's samloader stores its logs in the current working directory, let's move into OUT_DIR just for this time
         (
         cd "$OUT_DIR"
-        if [[ "$MODEL" == "SM-A346"* ]] && [ "$PINNED_VERSION_A34" ]; then
-            VERSION_FLAG="--firmware $PINNED_VERSION_A34 --force-firmware"
-        elif [[ "$MODEL" == "SM-S711"* ]] && [ "$PINNED_VERSION_S23_FE" ]; then
-            VERSION_FLAG="--firmware $PINNED_VERSION_S23_FE --force-firmware"
+        if [[ "$MODEL" == "SM-A346"* ]]; then
+            VERSION_FLAG="--firmware A346BXXSBDYI1/A346BOXMBDYI1/A346BXXSBDYI1/A346BXXSBDYI1 --force-firmware"
+        elif [[ "$MODEL" == "SM-S711"* ]]; then
+            VERSION_FLAG="--firmware S711BXXSAEYI1/S711BOXMAEYI1/S711BXXSAEYI1/S711BXXSAEYI1 --force-firmware"
         else
             VERSION_FLAG=""
         fi
