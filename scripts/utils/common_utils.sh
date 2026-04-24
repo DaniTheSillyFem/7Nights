@@ -262,6 +262,7 @@ ADD_TO_WORK_DIR()
         else
             mkdir -p "$TARGET_FILE"
         fi
+        EVAL "rm -f \"$TARGET_FILE\""
         EVAL "cp -a -T \"$SOURCE_FILE\" \"$TARGET_FILE\"" || exit 1
     fi
 
