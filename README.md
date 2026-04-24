@@ -32,14 +32,14 @@ Any form of contribution, suggestions, bug report or feature request for the pro
 NERV is a fork of UN1CA; to make the build system work with One UI 7, we are aiming for an UN1CA-like experience with what we can do. All changes have been made under GPLv3, if you see any problems about credits at repo, please kindly report to me at Telegram, XDA or email. 
 
 # What is 7Nights?
-7Nights is a fork of NERV; to make this whole thing compatible with the A04 models (5F/5M).
+7Nights is a fork of Project NERV; to make this whole thing compatible with the A04 models (5F/5M). This project aims to give one of the latest One UI version to older phones.
 
 # Features
 - Based on the latest Samsung devices firmware:
   - Galaxy S23 (Paradigm)
   - Galaxy S23 FE (Paradigm)
   - Galaxy A73 5G (Fun)
-- Galaxy AI support
+- Galaxy AI support 
 - App Lock Support
 - High end animations
 - Screenshots from Secure Apps support
@@ -71,7 +71,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 # Credits
 A big thanks goes to the following for their invaluable contributions in no particular order:
-- **[UN1CA](https://github.com/salvogiangri/UN1CA)** and **[NERV](https://github.com/vaultzie/NERV)** for the core patches and building system :D
+- **[UN1CA](https://github.com/salvogiangri/UN1CA)** and **[Project NERV](https://github.com/vaultzie/NERV)** for the core patches and building system :D
 - **[ShaDisNX255](https://github.com/ShaDisNX255)** for his help, time and for his [NcX ROM](https://github.com/ShaDisNX255/NcX_Stock) which inspired this project
 - **[DavidArsene](https://github.com/DavidArsene)** for his help and time
 - **[paulowesll](https://github.com/paulowesll)** for his help and support
