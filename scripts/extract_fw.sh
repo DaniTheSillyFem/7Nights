@@ -406,6 +406,15 @@ for i in "${FIRMWARES[@]}"; do
 
     DOWNLOADED_FIRMWARE="$(cat "$ODIN_DIR/${MODEL}_${CSC}/.downloaded")"
 
+    # Override with pinned version if set
+    if [[ "$MODEL" == "SM-A346"* ]]; then
+        DOWNLOADED_FIRMWARE="A346BXXSBDYI1/A346BOXMBDYI1/A346BXXSBDYI1/A346BXXSBDYI1"
+    elif [[ "$MODEL" == "SM-S711"* ]]; then
+        DOWNLOADED_FIRMWARE="S711BXXSAEYI1/S711BOXMAEYI1/S711BXXSAEYI1/S711BXXSAEYI1"
+    else
+        DOWNLOADED_FIRMWARE="$(GET_LATEST_FIRMWARE "$MODEL" "$CSC")"
+    fi
+
     BL_TAR="$(find "$ODIN_DIR/${MODEL}_${CSC}" -name "BL_$(cut -d "/" -f 1 -s <<< "$DOWNLOADED_FIRMWARE")*.md5" | sort -r | head -n 1)"
     AP_TAR="$(find "$ODIN_DIR/${MODEL}_${CSC}" -name "AP_$(cut -d "/" -f 1 -s <<< "$DOWNLOADED_FIRMWARE")*.md5" | sort -r | head -n 1)"
 
