@@ -190,7 +190,7 @@ for i in "${FIRMWARES[@]}"; do
         else
             VERSION_FLAG=""
         fi
-        samfwdl download "$MODEL" "$CSC" $VERSION_FLAG -o "$ODIN_DIR/${MODEL}_${CSC}" || exit 1
+        samfwdl download "$MODEL" "$CSC" $VERSION_FLAG -o "$ODIN_DIR/${MODEL}_${CSC}" --decrypt || exit 1
         )
 
         ZIP_FILE="$(find "$ODIN_DIR/${MODEL}_${CSC}" -name "*.zip" | sort -r | head -n 1)"
