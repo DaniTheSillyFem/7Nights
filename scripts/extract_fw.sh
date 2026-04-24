@@ -369,8 +369,18 @@ for i in "${FIRMWARES[@]}"; do
         exit 1
     fi
 
+    FIRM="$(cat "$ODIN_DIR/${MODEL}_${CSC}/.downloaded" 2> /dev/null)"
+
+    if [[ "$MODEL" == "SM-A346"* ]]; then
+        FIRM="A346BXXSBDYI1/A346BOXMBDYI1/A346BXXSBDYI1"
+    elif [[ "$MODEL" == "SM-S711"* ]]; then
+        FIRM="S711BXXSAEYI1/S711BOXMAEYI1/S711BXXSAEYI1"
+    else
+        FIRM="$(cat "$ODIN_DIR/${MODEL}_${CSC}/.downloaded" 2> /dev/null)"
+    fi
+    
     LOG_STEP_IN "- Processing $MODEL firmware with $CSC CSC"
-    LOG "- Downloaded firmware: $(cat "$ODIN_DIR/${MODEL}_${CSC}/.downloaded" 2> /dev/null)"
+    LOG "- Downloaded firmware: $FIRM"
     LOG "- Extracted firmware: $(cat "$FW_DIR/${MODEL}_${CSC}/.extracted" 2> /dev/null)"
     LOG "- Latest available firmware: $LATEST_FIRMWARE"
 
