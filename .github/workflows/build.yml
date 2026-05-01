@@ -1,4 +1,4 @@
-name: Build ProjectNERV
+name: Build 7Nights
 
 on:
   workflow_dispatch:
