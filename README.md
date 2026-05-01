@@ -32,7 +32,7 @@ Any form of contribution, suggestions, bug report or feature request for the pro
 NERV is a fork of UN1CA; to make the build system work with One UI 7, we are aiming for an UN1CA-like experience with what we can do. All changes have been made under GPLv3, if you see any problems about credits at repo, please kindly report to me at Telegram, XDA or email. 
 
 # What is 7Nights?
-7Nights is a fork of Project NERV; to make this whole thing compatible with the A04 models (5F/5M). This project aims to give one of the latest One UI version to older phones.
+7Nights is a fork of Project NERV; to make this whole thing compatible with the A04 models (5F/5M). This project aims to give one of the latest One UI version to one of the old budget A-series phones.
 
 # Features
 - Based on the latest Samsung devices firmware:
@@ -79,7 +79,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[ananjaser1211](https://github.com/ananjaser1211)** for troubleshooting and his time
 - **[iDrinkCoffee](https://github.com/iDrinkCoffee-TG)** and **[RisenID](https://github.com/RisenID)** for documentation revisioning
 - **[LineageOS Team](https://www.lineageos.org/)** for their original [OTA updater implementation](https://github.com/LineageOS/android_packages_apps_Updater)
-- **[Bobert10](https://t.me/bobert10)** for the NERV banner
+- **[Brandon (Telegram)](https://t.me/tabuenaa)** **[Tabuena](https://github.com/Tabuena)** for the 7Nights banner
 - **[All Kangers]** for making yagzie laugh with your rebranded repos with no difference
 - *All the UN1CA project contributors and testers ❤️*
 
