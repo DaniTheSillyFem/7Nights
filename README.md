@@ -83,5 +83,12 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[All Kangers]** for making yagzie laugh with your rebranded repos with no difference
 - *All the UN1CA project contributors and testers ❤️*
 
-# Stargazers over time
-[![Stargazers over time](https://starchart.cc/yagzie/NERV.svg)](https://starchart.cc/yagzie/NERV)
+## Star History
+
+<a href="https://www.star-history.com/?repos=DaniTheSillyFem%2F7Nights&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=DaniTheSillyFem/7Nights&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=DaniTheSillyFem/7Nights&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=DaniTheSillyFem/7Nights&type=date&legend=top-left" />
+ </picture>
+</a>
