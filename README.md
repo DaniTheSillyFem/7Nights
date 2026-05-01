@@ -79,7 +79,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[ananjaser1211](https://github.com/ananjaser1211)** for troubleshooting and his time
 - **[iDrinkCoffee](https://github.com/iDrinkCoffee-TG)** and **[RisenID](https://github.com/RisenID)** for documentation revisioning
 - **[LineageOS Team](https://www.lineageos.org/)** for their original [OTA updater implementation](https://github.com/LineageOS/android_packages_apps_Updater)
-- **[Brandon (Telegram)](https://t.me/tabuenaa)** **[Tabuena](https://github.com/Tabuena)** for the 7Nights banner
+- **[Brandon (Telegram)](https://t.me/tabuenaa)** **[Tabuena (GitHub)](https://github.com/Tabuena)** for the 7Nights banner
 - **[All Kangers]** for making yagzie laugh with your rebranded repos with no difference
 - *All the UN1CA project contributors and testers ❤️*
 
